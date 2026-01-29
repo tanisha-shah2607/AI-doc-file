@@ -1,0 +1,53 @@
+{
+  "company": "INFOPERCEPT",
+  "project_name": "AI-Driven Cybersecurity Analytics Platform",
+  "generated_at": "2026-01-30T00:00:00Z",
+  "project_duration_months": 12,
+  "data_sources": [
+    "SIEM Logs",
+    "Endpoint Telemetry",
+    "Network Traffic",
+    "Cloud Security Events",
+    "Threat Intelligence Feeds"
+  ],
+  "services": [
+    {
+      "name": "threat-detection-engine",
+      "requests_per_day": 1245123,
+      "avg_latency_ms": 142,
+      "p99_latency_ms": 912,
+      "false_positive_rate": 0.021,
+      "model_version": "v3.4.1"
+    },
+    {
+      "name": "behavioral-analytics-service",
+      "requests_per_day": 892112,
+      "avg_latency_ms": 168,
+      "p99_latency_ms": 1042,
+      "false_positive_rate": 0.017,
+      "model_version": "v2.9.0"
+    }
+  ],
+  "business_impact": {
+    "incidents_detected": 18234,
+    "critical_incidents_prevented": 6112,
+    "mean_time_to_detect_minutes": 3.8,
+    "mean_time_to_respond_minutes": 11.4,
+    "cost_savings_usd": 12450000
+  },
+  "regional_metrics": {
+    "India": {"events_processed": 48122112, "accuracy_pct": 96.1},
+    "US": {"events_processed": 39211221, "accuracy_pct": 97.4},
+    "EMEA": {"events_processed": 30122311, "accuracy_pct": 95.8}
+  },
+  "risks": [
+    "Model drift due to evolving attack techniques",
+    "High compute cost during peak threat activity",
+    "Latency spikes during cross-region correlation"
+  ],
+  "recommendations": [
+    "Continuous model retraining pipeline",
+    "Optimized feature extraction with embeddings",
+    "Region-aware inference routing"
+  ]
+}
